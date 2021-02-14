@@ -3,7 +3,6 @@ from django.contrib.auth.models import User
 
 class question(models.Model):
 	q = models.CharField(max_length = 100)
-	num_answers = models.IntegerField()
 	answer1 = models.CharField(max_length = 100)
 	answer2 = models.CharField(max_length = 100)
 	answer3 = models.CharField(max_length = 100)
@@ -16,7 +15,11 @@ class question(models.Model):
 	answer10 = models.CharField(max_length = 100)
 	answer11 = models.CharField(max_length = 100)
 	answer12 = models.CharField(max_length = 100)
-	type = models.IntegerField()
+	qtype = models.CharField(max_length = 100)
+
+
+
+ 
 
 
 
